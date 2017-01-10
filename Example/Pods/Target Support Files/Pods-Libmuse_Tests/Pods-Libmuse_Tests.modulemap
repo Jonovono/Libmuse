@@ -1,0 +1,6 @@
+framework module Pods_Libmuse_Tests {
+  umbrella header "Pods-Libmuse_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

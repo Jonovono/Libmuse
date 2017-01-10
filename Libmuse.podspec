@@ -24,19 +24,26 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/<GITHUB_USERNAME>/Libmuse'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { ''Jordan Howlett'' => 'jordan@howlett.io' }
+  s.author           = { "Jordan Howlett" => 'jordan@howlett.io' }
   s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/Libmuse.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Libmuse/Classes/**/*'
+  # s.source_files = 'Libmuse/Classes/**/*'
+
+  s.requires_arc = true
+
+  s.public_header_files = 'Pod/Headers/**/*.h'
+  s.ios.source_files = 'Headers/**/*.h'
+  s.ios.vendored_libraries = 'libMuse.a'
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-lc++' }
   
   # s.resource_bundles = {
   #   'Libmuse' => ['Libmuse/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'CoreBluetooth'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

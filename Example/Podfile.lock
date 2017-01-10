@@ -1,0 +1,16 @@
+PODS:
+  - Libmuse (0.1.0)
+
+DEPENDENCIES:
+  - Libmuse (from `../`)
+
+EXTERNAL SOURCES:
+  Libmuse:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Libmuse: c8aa5175c082f0c674d114b8c43729a48fa76944
+
+PODFILE CHECKSUM: 3ab991c9ef2e35779f907e41cf456ae4e94268aa
+
+COCOAPODS: 1.1.1

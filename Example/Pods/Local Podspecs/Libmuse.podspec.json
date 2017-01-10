@@ -1,0 +1,31 @@
+{
+  "name": "Libmuse",
+  "version": "0.1.0",
+  "summary": "A short description of Libmuse.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Libmuse",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jordan Howlett": "jordan@howlett.io"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Libmuse.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "public_header_files": "Pod/Headers/**/*.h",
+  "ios": {
+    "source_files": "Headers/**/*.h",
+    "vendored_libraries": "libMuse.a"
+  },
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-lc++"
+  },
+  "frameworks": "CoreBluetooth"
+}

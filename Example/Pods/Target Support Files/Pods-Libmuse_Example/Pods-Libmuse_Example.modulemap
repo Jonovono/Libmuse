@@ -1,0 +1,6 @@
+framework module Pods_Libmuse_Example {
+  umbrella header "Pods-Libmuse_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

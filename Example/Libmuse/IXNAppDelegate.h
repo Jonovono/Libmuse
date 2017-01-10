@@ -7,6 +7,7 @@
 //
 
 @import UIKit;
+#import "Muse.h"
 
 @interface IXNAppDelegate : UIResponder <UIApplicationDelegate>
 
