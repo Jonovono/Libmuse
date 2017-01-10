@@ -16,12 +16,11 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
   "requires_arc": true,
-  "public_header_files": "Pod/Headers/**/*.h",
   "ios": {
-    "source_files": "Headers/**/*.h",
+    "source_files": "Headers/Muse/*.h",
     "vendored_libraries": "libMuse.a"
   },
   "xcconfig": {

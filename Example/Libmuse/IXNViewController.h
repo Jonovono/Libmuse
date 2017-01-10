@@ -7,7 +7,8 @@
 //
 
 @import UIKit;
+#import "Muse.h"
 
-@interface IXNViewController : UIViewController
+@interface IXNViewController : UIViewController <IXNMuseConnectionListener, IXNMuseDataListener, IXNMuseListener, IXNLogListener>
 
 @end

@@ -28,14 +28,14 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/Libmuse.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   # s.source_files = 'Libmuse/Classes/**/*'
 
   s.requires_arc = true
 
-  s.public_header_files = 'Pod/Headers/**/*.h'
-  s.ios.source_files = 'Headers/**/*.h'
+  # s.public_header_files = 'Pod/Headers/**/*.h'
+  s.ios.source_files = 'Headers/Muse/*.h'
   s.ios.vendored_libraries = 'libMuse.a'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lc++' }
   
