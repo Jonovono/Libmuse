@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Libmuse_Example' do
+  pod 'Libmuse', :path => '../'
+
+  target 'Libmuse_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
